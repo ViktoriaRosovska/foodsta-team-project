@@ -1,0 +1,106 @@
+:root { --primary-text-color: #2C2C2C;
+    --footer-link-color: #7EB101;
+    --input-email-color:  #505050;
+    --main-bgc: #FEFEFE;
+    --secondary-bgc: #F5F5F5;
+    --main-color-hover-button: #BBF330;}
+
+html {box-sizing: border-box;}   
+
+*, 
+*::before, 
+*::after {box-sizing: inherit;}
+   
+h1, h2, h3, h4, h5, h6, p {margin: 0;}
+   
+ul {list-style-type: none;
+padding: 0;
+margin: 0;}  
+
+
+/* body */
+
+body { font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--primary-text-color);
+    background-color:var(--main-bgc);
+ 
+    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+ 
+    margin: auto;
+    width: 1280px;}  
+
+/* header */
+
+
+.header.main{display: flex;
+    width: 1280px;
+    height: 72px;
+    align-items: center;
+    text-decoration: none;
+    background: var(--main-bgc);
+    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);}    
+    
+
+/* logo */
+
+
+.logo { margin-left: 16px;
+    margin-right: 735px;
+    align-items: center;}    
+ 
+.nav .list {display: flex;
+        align-items: center;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 14px;}
+
+.list .list-item + .list-item {margin-left: 28px;}
+
+.main-nav {display: flex;
+       align-items: center;
+       text-decoration: none;}
+
+
+/* emphasis link  Як при підкресленні збільшити зону реагування посилання (padding)*/
+
+
+.link-item {text-decoration: none;
+        padding-top: 28px;
+        margin-bottom: 28px;
+        position: relative;} 
+        
+.link-item::before {content: '';
+                position: absolute;
+                left: 0; bottom: -5px;
+                width: 0;
+                height: 1.5px;
+                background-color: var(--main-color-hover-button);}   
+                
+.link-item:hover:before {width: 100%;}                    
+.link-item::before {transition: width 0.35s;}
+
+.nav .list .link-item:hover, .nav .list .link-item:focus {color: var(--main-color-hover-button)}
+
+
+/* button */
+
+
+.btn {background-color:var(--main-color-hover-button);
+  border-radius: 30px;
+  cursor: pointer;
+  width: 98px;
+  height: 32px;
+  border: 1px solid transparent;
+  font-weight: 500;
+  font-size: 13px;}
+
+.btn.head:hover {color:var(--primary-text-color);
+             background-color: var(--main-bgc);} 
+             
+.btn.head:focus {color:var(--primary-text-color);
+             background-color: var(--main-bgc);}                 
+
+.btn.head {margin-left: 30px;}      

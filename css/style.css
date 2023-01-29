@@ -3,9 +3,10 @@
     --main-clearance-color: #FFE550;
     --main-bg-color: #FEFEFE;
     --main-text-accent-color: #7EB101;
+    --main-btn-hover-color: #FFE450;
 
     --primary-text-color: #2C2C2C;
-    --input-email-color:  #505050;
+    --input-email-color: #505050;
     --secondary-bgc: #F5F5F5;
 
     --main-font-style: "Roboto", sans-serif;
@@ -28,11 +29,11 @@ p {
     margin: 0;
 }
 
- img {
+img {
     display: block;
     max-width: 100%;
     height: auto;
-} 
+}
 
 /* /* button {
     display: block;
@@ -56,7 +57,7 @@ a {
 
 .container {
     width: 1248px;
-    
+
     padding-right: 16px;
     margin: 0 auto;
 
@@ -109,71 +110,102 @@ body {
 /* header */
 
 
-.header.main{display: flex;
-             width: 1280px;
-             align-items: center;
-             text-decoration: none;
-             background: var(--main-bg-color);
-             box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);}    
+.header.main {
+    display: flex;
+    width: 1280px;
+    align-items: center;
+    text-decoration: none;
+    background: var(--main-bg-color);
+    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+}
 
 
 /* logo */
 
 
-.logo { display: flex;
-        margin-right: 735px;
-        align-items: center;}    
+.logo {
+    display: flex;
+    margin-right: 735px;
+    align-items: center;
+}
 
-.nav .list {display: flex;
-            align-items: center;
-            text-decoration: none;
-            cursor: pointer;
-            font-size: 14px;}
+.nav .list {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
 
-.list .list-item + .list-item {margin-left: 28px;}
+.list .list-item+.list-item {
+    margin-left: 28px;
+}
 
-.main-nav {display: flex;
-           height: 72px;
-           align-items: center;
-           text-decoration: none;}
+.main-nav {
+    display: flex;
+    height: 72px;
+    align-items: center;
+    text-decoration: none;
+}
 
-.link-item {text-decoration: none;
-            padding-top: 28px;
-            margin-bottom: 28px;
-            position: relative;} 
-   
-.link-item::before {content: '';
-                    position: absolute;
-                    left: 0; bottom: -1px;
-                    width: 0;
-                    height: 1.5px;
-                    background-color: var(--main-accent-color);}   
-           
-.link-item:hover:before {width: 100%;}                    
-.link-item::before {transition: width 0.35s;}
+.link-item {
+    text-decoration: none;
+    padding-top: 28px;
+    margin-bottom: 28px;
+    position: relative;
+}
 
-.nav .list .link-item:hover, .nav .list .link-item:focus {color: var(--main-accent-color)}
+.link-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 0;
+    height: 1.5px;
+    background-color: var(--main-accent-color);
+}
+
+.link-item:hover:before {
+    width: 100%;
+}
+
+.link-item::before {
+    transition: width 0.35s;
+}
+
+.nav .list .link-item:hover,
+.nav .list .link-item:focus {
+    color: var(--main-accent-color)
+}
 
 
 /* button */
 
 
-.btn {background-color:var(--main-accent-color);
-      border-radius: 30px;
-      cursor: pointer;
-      width: 98px;
-      height: 32px;
-      border: 1px solid transparent;
-      font-weight: 500;
-      font-size: 13px;}
+.btn {
+    background-color: var(--main-accent-color);
+    border-radius: 30px;
+    cursor: pointer;
+    width: 98px;
+    height: 32px;
+    border: 1px solid transparent;
+    font-weight: 500;
+    font-size: 13px;
+}
 
-.btn.head:hover {color:var(--primary-text-color);
-                 background-color: var(--main-bg-color);} 
-        
-.btn.head:focus {color:var(--primary-text-color);
-                 background-color: var(--main-bg-color);}                 
+.btn.head:hover {
+    color: var(--primary-text-color);
+    background-color: var(--main-btn-hover-color);
+}
 
-.btn.head {margin-left: 30px;}  
+.btn.head:focus {
+    color: var(--primary-text-color);
+    background-color: var(--main-btn-hover-color);
+}
+
+.btn.head {
+    margin-left: 30px;
+}
 
 
 /** ============================== /HEADER ============================== **/
@@ -227,8 +259,3 @@ body {
 
 
 /** ============================== /FOOTER ============================== **/
-
-
-
-    
-

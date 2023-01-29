@@ -266,7 +266,22 @@ body {
 
 /** ============================== CUSTOMERS SAY ============================== **/
 
-
+.customers-section{
+    background-color: var(--main-clearance-color);
+}
+.list{
+    list-style: none;
+}
+.say-list{
+    display: flex;
+    justify-content: flex-start;
+    gap: 139px;
+}
+.customers-card{
+    width: 501px;
+    height: 227px;
+    background-color: var(--main-bg-color);
+}
 
 
 /** ============================== /CUSTOMERS ============================== **/

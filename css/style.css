@@ -1,7 +1,8 @@
 :root {
     --main-accent-color: #BBF330;
     --main-clearance-color: #FFE550;
-    --nain-bg-color: #FEFEFE;
+    --main-bg-color: #FEFEFE;
+    --main-text-accent-color: #7EB101;
 
     --main-font-style: "Roboto", sans-serif;
     --main-bold-font: 700px;

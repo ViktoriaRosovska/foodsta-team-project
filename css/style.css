@@ -169,30 +169,45 @@ body {
     width: 100%;
 }
 
-.link-item {text-decoration: none;
-            color: var(--primary-text-color);
-            padding-top: 28px;
-            margin-bottom: 28px;
-            position: relative;} 
-   
-.link-item::before {content: '';
-                    position: absolute;
-                    left: 0; bottom: -1px;
-                    width: 0;
-                    height: 1.5px;
-                    background-color: var(--main-accent-color);}   
-           
-.link-item:hover:before {width: 100%; transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);}                    
-.link-item::before {transition: all width 0.35s 500ms cubic-bezier(0.4, 0, 0.2, 1);}
+.link-item {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    padding-top: 28px;
+    margin-bottom: 28px;
+    position: relative;
+}
 
-.nav .list .link-item:hover, .nav .list .link-item:focus {color: var(--main-accent-color);
-                                                          transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);}
+.link-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 0;
+    height: 1.5px;
+    background-color: var(--main-accent-color);
+}
+
+.link-item:hover:before {
+    width: 100%;
+    transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-item::before {
+    transition: all width 0.35s 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav .list .link-item:hover,
+.nav .list .link-item:focus {
+    color: var(--main-accent-color);
+    transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 
 /* button */
 
 
 .btn {
+    font-family: var(--main-font-style);
     background-color: var(--main-accent-color);
     border-radius: 30px;
     cursor: pointer;
@@ -201,20 +216,21 @@ body {
     border: 1px solid transparent;
     font-weight: 500;
     font-size: 13px;
+    line-height: 1.5;
+    color: var(--primary-text-color);
 }
 
-.btn.head:hover {
+.btn:hover {
     color: var(--primary-text-color);
     background-color: var(--main-btn-hover-color);
+    transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn.head:hover {color:var(--primary-text-color);
-                 background-color: var(--main-btn-hover-color);
-                 transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);} 
-        
-.btn.head:focus {color:var(--primary-text-color);
-                 background-color:var(--main-clearance-color);
-                 transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);}                 
+.btn:focus {
+    color: var(--primary-text-color);
+    background-color: var(--main-clearance-color);
+    transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .btn.head {
     margin-left: 30px;
@@ -266,12 +282,12 @@ body {
 }
 
 .sub-title {
-   font-family: var(--main-font-style);
-   font-weight: 700;
-   font-size: 42px;
-   line-height: 50.4px;
-   color: #2C2C2C;
-   margin-bottom: 20px;
+    font-family: var(--main-font-style);
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50.4px;
+    color: #2C2C2C;
+    margin-bottom: 20px;
 }
 
 .sub-paragraph {
@@ -284,21 +300,10 @@ body {
     margin-bottom: 24px;
 }
 
-.sub-btn {
-    font-family: var(--main-font-style);
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 19.5px;
-    color: #2C2C2C;
-    background-color: var(--main-accent-color);
-    border-radius: 30px;
-    padding: 11px 22px;
-}
-
-.sub-btn:hover,
+/* .sub-btn:hover,
 .sub-btn:focus {
-    background-color: #FFE450;
-}
+    background-color: var();
+} */
 
 /** ============================== /SUBSRIBE ============================== **/
 

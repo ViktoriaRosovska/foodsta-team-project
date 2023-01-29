@@ -270,7 +270,7 @@ body {
    font-weight: 700;
    font-size: 42px;
    line-height: 50.4px;
-   color: #2C2C2C;
+   color: var(--primary-text-color);
    margin-bottom: 20px;
 }
 
@@ -279,7 +279,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #2C2C2C;
+    color: var(--primary-text-color);
     width: 656px;
     margin-bottom: 24px;
 }
@@ -289,7 +289,7 @@ body {
     font-weight: 500;
     font-size: 13px;
     line-height: 19.5px;
-    color: #2C2C2C;
+    color: var(--primary-text-color);
     background-color: var(--main-accent-color);
     border-radius: 30px;
     padding: 11px 22px;
@@ -297,12 +297,46 @@ body {
 
 .sub-btn:hover,
 .sub-btn:focus {
-    background-color: #FFE450;
+    background-color: var(--main-btn-hover-color);
 }
 
 /** ============================== /SUBSRIBE ============================== **/
 
 /** ============================== FOOTER ============================== **/
+/* subscribe form */
+.form{
+    padding-left: 870px;
+}
+.footer-title{
+    font-family: var(--main-font-style);
+    font-weight: 500;
+font-size: 14px;
+line-height: 1.5;
+color: var(--primary-text-color);
+}
+.form-paragraph{
+    font-weight: 400;
+font-size: 12px;
+line-height: 1.2;
+color: var(--primary-text-color);
+margin-top: 58px;
+}
+.form-link{
+    text-decoration-line: underline; 
+    color: var(--main-text-accent-color);
+}
+.form-button{
+    position: absolute;
+    width: 103px;
+height: 42px;
+background: var(--main-bg-color);
+border: 0.854167px solid;
+border-color: var(--main-accent-color);
+border-radius: 30px;
+font-weight: 500;
+font-size: 13px;
+line-height: 150%;
+}
 
 
 

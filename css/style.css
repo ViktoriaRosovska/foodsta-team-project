@@ -244,9 +244,48 @@ body {
 
 /** ============================== SUBSCRIBE ============================== **/
 
+.subscribe {
+    padding-bottom: 100px;
+}
 
+.sub-container {
+    display: flex;
+}
 
+.sub-title {
+   font-family: var(--main-font-style);
+   font-weight: 700;
+   font-size: 42px;
+   line-height: 50.4px;
+   color: #2C2C2C;
+   margin-bottom: 20px;
+}
 
+.sub-paragraph {
+    font-family: var(--main-font-style);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2C2C2C;
+    width: 656px;
+    margin-bottom: 24px;
+}
+
+.sub-btn {
+    font-family: var(--main-font-style);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19.5px;
+    color: #2C2C2C;
+    background-color: var(--main-accent-color);
+    border-radius: 30px;
+    padding: 11px 22px;
+}
+
+.sub-btn:hover,
+.sub-btn:focus {
+    background-color: #FFE450;
+}
 
 /** ============================== /SUBSRIBE ============================== **/
 

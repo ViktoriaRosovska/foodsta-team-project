@@ -279,6 +279,35 @@ body {
 }
 
 /** ============================== /CUSTOMERS ============================== **/
+.customer-icon{
+  margin-left: 12px;
+  margin-top: 12px;
+  margin-bottom: 28px;
+}
+.customer-text{
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 46px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(21px / 18px);
+ }
+.customer-item{
+  display: flex;
+  width: 160px;
+  margin-right: 16px;
+  margin-left: 12px;
+  gap: 16px;
+  border-right: 1px solid var(--main-text-accent-color)
+}
+.customer-name{
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.customer-descr{
+  font-size: 14px;
+}
 
 /** ============================== SUBSCRIBE ============================== **/
 

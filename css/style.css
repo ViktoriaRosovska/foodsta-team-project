@@ -15,6 +15,7 @@
 
   --items: 2;
   --indent: 67px;
+  --indent-favorites: 32px;
   /*змінні для формули, змінні можна перебивати задаючи в своїй секції нові значення
      flex-basis: calc((100% - (var(--items) -1) * var(--indent)) / var(--items)); */
 }
@@ -49,9 +50,9 @@ a {
 /** ============================== COMPONENTS ============================== **/
 
 .container {
-  width: 1248px;
-
+  width: 1280px;
   padding-right: 16px;
+  padding-left: 16px;
   margin: 0 auto;
 
   outline: 1px solid blue;
@@ -236,6 +237,31 @@ body {
 
 /** ============================== /FAVORITES ============================== **/
 
+.favorites-title {
+  text-align: center;
+}
+
+.favorite-txt {
+  line-height: 1.2;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.favorite-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--indent-favorites) * 2) var(--indent-favorites);
+}
+
+.favorite-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+width: 394px;
+height: 397px;
+}
+
+
 /** ============================== CUSTOMERS SAY ============================== **/
 
 
@@ -253,7 +279,8 @@ body {
 }
 
 .customers-title {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */ 
+  /* дублювання margin з section-title */
 }
 
 .customers-paragraph {

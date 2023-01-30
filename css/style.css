@@ -266,6 +266,7 @@ body {
   height: 397px;
   position: relative;
   /* flex-basis: calc((100% - (var(--indent-favorites) * (var(--items-favorites) - 1))) / var(--items-favorites)); */
+  stroke: var(--main-clearance-color);
 }
 
 .favorite-ring {
@@ -273,7 +274,10 @@ body {
   z-index: -1;
 }
 
-
+.favorite-item:hover,
+.favorite-item:focus {
+  stroke: var(--main-accent-color);
+}
 
 /** ============================== CUSTOMERS SAY ============================== **/
 

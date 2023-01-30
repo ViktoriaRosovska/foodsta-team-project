@@ -16,6 +16,7 @@
   --items: 2;
   --indent: 67px;
   --indent-favorites: 32px;
+  /* --items-favorites: 3; */
   /*змінні для формули, змінні можна перебивати задаючи в своїй секції нові значення
      flex-basis: calc((100% - (var(--items) -1) * var(--indent)) / var(--items)); */
 }
@@ -75,9 +76,9 @@ a {
   margin-bottom: 40px;
 }
 
-
 /* клас для білої кнопки з зеленою рамкою */
-.btn.light-theme {}
+.btn.light-theme {
+}
 
 /** ============================== /COMPONENTS ============================== **/
 
@@ -126,7 +127,7 @@ body {
   font-size: 14px;
 }
 
-.list .list-item+.list-item {
+.list .list-item + .list-item {
   margin-left: 28px;
 }
 
@@ -237,6 +238,10 @@ body {
 
 /** ============================== /FAVORITES ============================== **/
 
+.favorites {
+  margin: 100px auto;
+}
+
 .favorites-title {
   text-align: center;
 }
@@ -257,15 +262,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-width: 394px;
-height: 397px;
+  width: 394px;
+  height: 397px;
+  position: relative;
+  /* flex-basis: calc((100% - (var(--indent-favorites) * (var(--items-favorites) - 1))) / var(--items-favorites)); */
+}
+
+.favorite-ring {
+  position: absolute;
+  z-index: -1;
 }
 
 
+
 /** ============================== CUSTOMERS SAY ============================== **/
-
-
-
 
 /* ще не зроблене позиціювання фонового зображення */
 .customers-section {
@@ -279,7 +289,7 @@ height: 397px;
 }
 
 .customers-title {
-  /* margin-bottom: 20px; */ 
+  /* margin-bottom: 20px; */
   /* дублювання margin з section-title */
 }
 
@@ -303,24 +313,24 @@ height: 397px;
   height: 227px;
   background-color: var(--main-bg-color);
   border-radius: 0px 30px 30px 30px;
-  
+
   padding-left: 14px;
   padding-right: 14px;
 }
 
 /** ============================== /CUSTOMERS ============================== **/
-.customer-icon{
+.customer-icon {
   margin-left: 14px;
   margin-top: 14px;
   margin-bottom: 28px;
 }
-.customer-text{
-   margin-bottom: 40px;
+.customer-text {
+  margin-bottom: 40px;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
- }
-.customer-info{
+}
+.customer-info {
   position: relative;
 
   display: flex;
@@ -329,10 +339,10 @@ height: 397px;
   padding-bottom: 2px;
 
   gap: 16px;
-  }
+}
 
-.customer-info::after{
-  content: '';
+.customer-info::after {
+  content: "";
   position: absolute;
   display: block;
   right: 0;
@@ -345,13 +355,13 @@ height: 397px;
   background-color: var(--main-text-accent-color);
 }
 
-.customer-name{
+.customer-name {
   font-weight: 500;
   font-size: 14px;
   margin-bottom: 4px;
   margin-right: 16px;
 }
-.customer-descr{
+.customer-descr {
   font-size: 14px;
   margin-right: 2px;
 }

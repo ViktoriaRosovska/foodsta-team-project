@@ -75,8 +75,7 @@ a {
 }
 
 /* клас для білої кнопки з зеленою рамкою */
-.btn.light-theme {
-}
+.btn.light-theme {}
 
 /** ============================== /COMPONENTS ============================== **/
 
@@ -125,7 +124,7 @@ body {
   font-size: 14px;
 }
 
-.list .list-item + .list-item {
+.list .list-item+.list-item {
   margin-left: 28px;
 }
 
@@ -233,6 +232,15 @@ body {
 .container-flex {
   display: flex;
 }
+
+.offerings-list {
+  display: flex;
+}
+
+.offerings-list-item {
+  outline: 1px solid red;
+}
+
 /** ============================== /OFFERINGS ============================== **/
 
 /** ============================== FAVORITES ============================== **/
@@ -276,24 +284,26 @@ body {
   height: 227px;
   background-color: var(--main-bg-color);
   border-radius: 0px 30px 30px 30px;
-  
+
   padding-left: 14px;
   padding-right: 14px;
 }
 
 /** ============================== /CUSTOMERS ============================== **/
-.customer-icon{
+.customer-icon {
   margin-left: 14px;
   margin-top: 14px;
   margin-bottom: 28px;
 }
-.customer-text{
-   margin-bottom: 40px;
+
+.customer-text {
+  margin-bottom: 40px;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
- }
-.customer-info{
+}
+
+.customer-info {
   position: relative;
 
   display: flex;
@@ -302,9 +312,9 @@ body {
   padding-bottom: 2px;
 
   gap: 16px;
-  }
+}
 
-.customer-info::after{
+.customer-info::after {
   content: '';
   position: absolute;
   display: block;
@@ -319,32 +329,32 @@ body {
 }
 
 .sub-title {
-   font-family: var(--main-font-style);
-   font-weight: 700;
-   font-size: 42px;
-   line-height: 50.4px;
-   color: var(--primary-text-color);
-   margin-bottom: 20px;
+  font-family: var(--main-font-style);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 50.4px;
+  color: var(--primary-text-color);
+  margin-bottom: 20px;
 }
 
 .sub-paragraph {
-    font-family: var(--main-font-style);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--primary-text-color);
-    width: 656px;
-    margin-bottom: 24px;
+  font-family: var(--main-font-style);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--primary-text-color);
+  width: 656px;
+  margin-bottom: 24px;
 }
 
-.customer-name{
+.customer-name {
   font-weight: 500;
   font-size: 14px;
   margin-bottom: 4px;
   margin-right: 16px;
 }
 
-.customer-descr{
+.customer-descr {
   font-size: 14px;
   margin-right: 2px;
 }
@@ -365,38 +375,43 @@ body {
 
 /** ============================== FOOTER ============================== **/
 /* subscribe form */
-.form{
-    padding-left: 870px;
+.form {
+  padding-left: 870px;
 }
-.form-title{
-    font-family: var(--main-font-style);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.5;
-    color: var(--primary-text-color);
-    margin-bottom: 12px;
+
+.form-title {
+  font-family: var(--main-font-style);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--primary-text-color);
+  margin-bottom: 12px;
 }
-.form-paragraph{
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.2;
-    color: var(--primary-text-color);
-    margin-top: 12px;
+
+.form-paragraph {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  color: var(--primary-text-color);
+  margin-top: 12px;
 }
-.form-link{
-    text-decoration-line: underline; 
-    color: var(--main-text-accent-color);
+
+.form-link {
+  text-decoration-line: underline;
+  color: var(--main-text-accent-color);
 }
-.light-theme-btn{
-    background: var(--main-bg-color);
-    border: 0.854167px solid;
-    border-color: var(--main-accent-color); 
+
+.light-theme-btn {
+  background: var(--main-bg-color);
+  border: 0.854167px solid;
+  border-color: var(--main-accent-color);
 }
-.form-btn{
-    width: 103px;
-    height: 42px;
-    border-radius: 30px;
-    line-height: 1.5;
+
+.form-btn {
+  width: 103px;
+  height: 42px;
+  border-radius: 30px;
+  line-height: 1.5;
 }
 
 /** ============================== /FOOTER ============================== **/

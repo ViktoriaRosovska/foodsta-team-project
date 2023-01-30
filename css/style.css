@@ -276,9 +276,58 @@ body {
   height: 227px;
   background-color: var(--main-bg-color);
   border-radius: 0px 30px 30px 30px;
+  
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
 /** ============================== /CUSTOMERS ============================== **/
+.customer-icon{
+  margin-left: 14px;
+  margin-top: 14px;
+  margin-bottom: 28px;
+}
+.customer-text{
+   margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+ }
+.customer-info{
+  position: relative;
+
+  display: flex;
+  width: 160px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+
+  gap: 16px;
+  }
+
+.customer-info::after{
+  content: '';
+  position: absolute;
+  display: block;
+  right: 0;
+  bottom: 0;
+  width: 52px;
+  height: 1px;
+
+  transform: rotate(90deg);
+  transform-origin: right;
+  background-color: var(--main-text-accent-color);
+}
+
+.customer-name{
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 4px;
+  margin-right: 16px;
+}
+.customer-descr{
+  font-size: 14px;
+  margin-right: 2px;
+}
 
 /** ============================== SUBSCRIBE ============================== **/
 

@@ -237,8 +237,24 @@ body {
   display: flex;
 }
 
-.offerings-list-item {
+.offerings-list .list-item {
   outline: 1px solid red;
+}
+
+.oferings-icon {
+  outline: 1px solid red;
+  background-color: var(--main-bg-color);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offerings-content {
+  width: 573px;
+  outline: 1px solid green;
 }
 
 /** ============================== /OFFERINGS ============================== **/

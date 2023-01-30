@@ -50,15 +50,14 @@ a {
 
 .container {
   width: 1248px;
-
-  padding-right: 16px;
   margin: 0 auto;
-
   outline: 1px solid blue;
 }
 
 .section {
   margin: 0 auto;
+  padding-right: 16px;
+  padding-left: 16px;
   width: 1280px;
   outline: 1px solid red;
 }
@@ -74,8 +73,48 @@ a {
   margin-bottom: 40px;
 }
 
+/* button */
+
+.btn {
+  font-family: var(--main-font-style);
+  background-color: var(--main-accent-color);
+  border-radius: 30px;
+  cursor: pointer;
+  width: 98px;
+  height: 32px;
+  border: 1px solid transparent;
+  font-weight: var(--main-bold-font);
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--primary-text-color);
+}
+
+.btn:hover {
+  color: var(--primary-text-color);
+  background-color: var(--main-btn-hover-color);
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:focus {
+  color: var(--primary-text-color);
+  background-color: var(--main-clearance-color);
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* клас для білої кнопки з зеленою рамкою */
-.btn.light-theme {}
+.light-theme-btn {
+  background: var(--main-bg-color);
+  border: 0.854167px solid;
+  border-color: var(--main-accent-color);
+}
+
+/* клас для високої кнопки форми */
+.form-btn {
+  width: 103px;
+  height: 42px;
+  border-radius: 30px;
+  line-height: 1.5;
+}
 
 /** ============================== /COMPONENTS ============================== **/
 
@@ -101,7 +140,6 @@ body {
 
 .header.main {
   display: flex;
-  width: 1280px;
   align-items: center;
   text-decoration: none;
   background: var(--main-bg-color);
@@ -189,36 +227,8 @@ body {
   transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* button */
-
-.btn {
-  font-family: var(--main-font-style);
-  background-color: var(--main-accent-color);
-  border-radius: 30px;
-  cursor: pointer;
-  width: 98px;
-  height: 32px;
-  border: 1px solid transparent;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 1.5;
-  color: var(--primary-text-color);
-}
-
-.btn:hover {
-  color: var(--primary-text-color);
-  background-color: var(--main-btn-hover-color);
-  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn:focus {
-  color: var(--primary-text-color);
-  background-color: var(--main-clearance-color);
-  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .btn.head {
-  margin-left: 30px;
+  margin-left: auto;
 }
 
 /** ============================== /HEADER ============================== **/
@@ -267,10 +277,7 @@ body {
 
 /* ще не зроблене позиціювання фонового зображення */
 .customers-section {
-  max-width: 1280px;
   height: 647px;
-  margin-left: auto;
-  margin-right: auto;
   background-image: url(../images/bg-yellow-top.png);
   padding-top: 100px;
   padding-bottom: 200px;
@@ -346,7 +353,7 @@ body {
 
 .sub-title {
   font-family: var(--main-font-style);
-  font-weight: 700;
+  font-weight: var(--main-bold-font);
   font-size: 42px;
   line-height: 50.4px;
   color: var(--primary-text-color);
@@ -355,7 +362,6 @@ body {
 
 .sub-paragraph {
   font-family: var(--main-font-style);
-  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: var(--primary-text-color);
@@ -364,7 +370,7 @@ body {
 }
 
 .customer-name {
-  font-weight: 500;
+  font-weight: var(--main-medium-font);
   font-size: 14px;
   margin-bottom: 4px;
   margin-right: 16px;
@@ -417,17 +423,5 @@ body {
   color: var(--main-text-accent-color);
 }
 
-.light-theme-btn {
-  background: var(--main-bg-color);
-  border: 0.854167px solid;
-  border-color: var(--main-accent-color);
-}
-
-.form-btn {
-  width: 103px;
-  height: 42px;
-  border-radius: 30px;
-  line-height: 1.5;
-}
 
 /** ============================== /FOOTER ============================== **/

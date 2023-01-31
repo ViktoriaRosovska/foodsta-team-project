@@ -15,8 +15,7 @@
 
   --items: 2;
   --indent: 67px;
-  --indent-favorites: 32px;
-  /* --items-favorites: 3; */
+ 
   /*змінні для формули, змінні можна перебивати задаючи в своїй секції нові значення
      flex-basis: calc((100% - (var(--items) -1) * var(--indent)) / var(--items)); */
 }
@@ -274,8 +273,9 @@ body {
 
 /** ============================== /FAVORITES ============================== **/
 
-.favorites {
-  margin: 100px auto;
+.container-favorites {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .favorites-title {
@@ -289,6 +289,7 @@ body {
 }
 
 .favorite-list {
+  --indent-favorites: 32px;
   display: flex;
   flex-wrap: wrap;
   gap: calc(var(--indent-favorites) * 2) var(--indent-favorites);
@@ -301,6 +302,7 @@ body {
   width: 394px;
   height: 397px;
   position: relative;
+  /* --items-favorites: 3; */
   /* flex-basis: calc((100% - (var(--indent-favorites) * (var(--items-favorites) - 1))) / var(--items-favorites)); */
   stroke: var(--main-clearance-color);
 }

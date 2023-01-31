@@ -395,9 +395,22 @@ body {
 /** ============================== /SUBSRIBE ============================== **/
 
 /** ============================== FOOTER ============================== **/
+.footer-section{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.footer{
+  display: flex;
+}
+.list-item{
+  margin-left: 28px;
+}
+.footer-logo{
+  margin-right: 148px;
+}
 /* subscribe form */
 .form {
-  padding-left: 870px;
+  padding-left: 320px;
 }
 
 .form-title {

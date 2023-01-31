@@ -15,6 +15,8 @@
 
   --items: 2;
   --indent: 67px;
+  --indent-favorites: 32px;
+  /* --items-favorites: 3; */
   /*змінні для формули, змінні можна перебивати задаючи в своїй секції нові значення
      flex-basis: calc((100% - (var(--items) -1) * var(--indent)) / var(--items)); */
 }
@@ -271,6 +273,47 @@ body {
 /** ============================== FAVORITES ============================== **/
 
 /** ============================== /FAVORITES ============================== **/
+
+.favorites {
+  margin: 100px auto;
+}
+
+.favorites-title {
+  text-align: center;
+}
+
+.favorite-txt {
+  line-height: 1.2;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.favorite-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--indent-favorites) * 2) var(--indent-favorites);
+}
+
+.favorite-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 394px;
+  height: 397px;
+  position: relative;
+  /* flex-basis: calc((100% - (var(--indent-favorites) * (var(--items-favorites) - 1))) / var(--items-favorites)); */
+  stroke: var(--main-clearance-color);
+}
+
+.favorite-ring {
+  position: absolute;
+  z-index: -1;
+}
+
+.favorite-item:hover,
+.favorite-item:focus {
+  stroke: var(--main-accent-color);
+}
 
 /** ============================== CUSTOMERS SAY ============================== **/
 

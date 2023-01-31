@@ -466,4 +466,40 @@ body {
 }
 
 
+/*Nadiia Bykova*/
+ .group-footer{
+  background-image: url(../images/footer-bg.png);
+  background-repeat: no-repeat;
+ }
+
+ .footer-link {
+   color: var(--main-text-accent-color);
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 1.2px;
+   text-decoration: underline;
+ }
+
+ .list-footer {
+   display: flex;
+   gap: 20px;
+ }
+
+ .last-line {
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 100px;
+   align-items: baseline;
+  
+ }
+
+ .text-footer {
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 1.2px;
+ }
+
+ 
+ 
+
 /** ============================== /FOOTER ============================== **/

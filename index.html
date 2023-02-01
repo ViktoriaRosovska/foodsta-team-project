@@ -1,91 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FoodSta</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" 
-           integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" 
-           crossorigin="anonymous" referrerpolicy="no-referrer" />     
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-  
-<!-- Header  Dmytro Junior-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Header  Dmytro Junior-->
 
-<header class="header-section section">
-  <div class="main-nav container">
-    <a href="./index.html" class="logo"> <svg width="66" height="52">
-      <use href="./images/svg/icons.svg#icon-logo"></use>
-    </svg> </a>
-          <nav class="nav">
-             <ul class="list">
-                <li class="list-item"><a href="" class="link-item" >Home</a></li>
-                <li class="list-item"><a href="" class="link-item" >About</a></li>
-                <li class="list-item"><a href="" class="link-item" >Service</a></li>
-                <li class="list-item"><a href="" class="link-item" >Menu</a></li>
-                <li class="list-item"><a href="" class="link-item" >Contact</a></li>
-            </ul>
+    <header class="header-section section">
+      <div class="main-nav container">
+        <a href="./index.html" class="logo">
+          <svg width="66" height="52">
+            <use href="./images/svg/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <nav class="nav">
+          <ul class="list">
+            <li class="list-item"><a href="" class="link-item">Home</a></li>
+            <li class="list-item"><a href="" class="link-item">About</a></li>
+            <li class="list-item"><a href="" class="link-item">Service</a></li>
+            <li class="list-item"><a href="" class="link-item">Menu</a></li>
+            <li class="list-item"><a href="" class="link-item">Contact</a></li>
+          </ul>
         </nav>
-         <button type="button" class="btn head">Order Now</button>
-  </div>
-</header>    
-   
-<main>
-<!-- Hero  Dmytro Kozhukhar-->
-  
+        <button type="button" class="btn head">Order Now</button>
+      </div>
+    </header>
 
+    <main>
+      <section class="hero-section section">
+        <div class="container hero-container">
+          <div class="hero-list">
+            <h1 class="hero-text">
+              Enjoy Your Favorite <br />
+              Food From Anywhere
+            </h1>
+            <p class="hero-paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse <br />
+              varius enim in eros elementum tristique. Duis cursus, mi quis
+              viverra <br />
+              ornare, eros dolor interdum nulla, ut commodo diam libero vitae
+              erat.
+            </p>
+            <button type="button" class="btn head">Order now</button>
+          </div>
 
+          <div class="hero-image">
+            <img
+              src="./images/falafel.png"
+              alt="nicefood"
+              width="528"
+              height="528"
+            />
+          </div>
+        </div>
+      </section>
 
-<!-- Offerings Pasha Bitelov--Dmytro Krylov-->
+      <!-- Offerings Pasha Bitelov--Dmytro Krylov-->
 
+      <!-- Favorites Mykola Kolyada--add issue-->
 
+      <!-- Customers Say Vitalina Shpir--add issue-->
 
+      <section class="customers-section section">
+        <div class="container">
+          <h2 class="section-title customers-title">What our Customers Say</h2>
+          <p class="paragraph customers-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
 
-<!-- Favorites Mykola Kolyada--add issue-->
-  
+          <ul class="say-list list">
+            <li class="customers-card"><div class="card-place"></div></li>
+            <li class="customers-card"><div class="card-place"></div></li>
+          </ul>
+        </div>
+      </section>
 
+      <!-- Subscribe Illya--Albina -->
+      <section class="subscribe section">
+        <div class="container sub-container">
+          <div>
+            <h2 class="section-title sub-title">
+              Subscribe To Get Special Offers
+            </h2>
+            <p class="paragraph sub-paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
+            <!-- the form -->
+            <button type="button" class="btn sub">Subscribe</button>
+          </div>
+          <img
+            class="sub-img"
+            src="./images/banan.png"
+            alt="banana"
+            width="608"
+            height="266"
+          />
+        </div>
+      </section>
 
-
-<!-- Customers Say Vitalina Shpir--add issue-->
-
-<section class="customers-section section">
-  <div class="container">
-  <h2 class="section-title customers-title">What our Customers Say</h2>
-  <p class="paragraph customers-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-    <ul class="say-list list">
-      <li class="customers-card"><div class="card-place"></div></li>
-      <li class="customers-card"><div class="card-place"></div></li>
-    </ul>
- 
- 
-</div>
-</section>
-
-<!-- Subscribe Illya--Albina -->
-<section class="subscribe section">
-  <div class="container sub-container">
-    <div>
-    <h2 class="section-title sub-title">Subscribe To Get Special Offers</h2> 
-      <p class="paragraph sub-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-    <!-- the form -->
-      <button type="button" class="btn sub">Subscribe</button>
-    </div>
-      <img class="sub-img" src="./images/banan.png" alt="banana" width="608" height="266">
-  </div>
-</section>
-
-<!-- Footer Nadia Bykova--add issue Svitlana Byivol add issue-->
-
-</body>
+      <!-- Footer Nadia Bykova--add issue Svitlana Byivol add issue-->
+    </main>
+  </body>
 </html>
-
-</main>
-
-
-

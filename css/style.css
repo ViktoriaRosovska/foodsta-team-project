@@ -253,22 +253,22 @@ body {
 /** ============================== HERO ============================== **/
 .hero-container {
   display: flex;
-}
 
+  padding: 0;
+}
 .hero-list {
   padding-top: 159px;
 }
-
 .hero-title {
   font-size: 48px;
+  line-height: 1.2;
   margin-bottom: 28px;
 }
-
 .hero-paragraph {
   margin-bottom: 40px;
 }
-
-.hero-list>.btn.head {
+.hero-list > .btn.head
+{
   margin-left: 0;
 }
 
@@ -623,8 +623,10 @@ body {
 
 .footer-link {
   color: var(--main-text-accent-color);
+
   font-size: 12px;
   text-decoration: underline;
+
 }
 
 .list-footer {
@@ -632,10 +634,14 @@ body {
   gap: 20px;
 }
 
+.links-item {
+  margin-bottom: 0;
+  margin-top: 80px;
+}
+
 .last-line {
   display: flex;
   justify-content: space-between;
-
   align-items: baseline;
 
 }
@@ -644,9 +650,9 @@ body {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.2px;
+
 }
 
-
-
+ 
 
 /** ============================== /FOOTER ============================== **/

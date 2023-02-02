@@ -4,6 +4,7 @@
   --main-bg-color: #fefefe;
   --main-text-accent-color: #7eb101;
   --main-btn-hover-color: #ffe450;
+  --clean-white-color: #ffffff;
 
   --primary-text-color: #2c2c2c;
   --input-email-color: #505050;
@@ -15,7 +16,7 @@
 
   --items: 2;
   --indent: 67px;
- 
+
   /*змінні для формули, змінні можна перебивати задаючи в своїй секції нові значення
      flex-basis: calc((100% - (var(--items) -1) * var(--indent)) / var(--items)); */
 }
@@ -50,17 +51,17 @@ a {
 /** ============================== COMPONENTS ============================== **/
 
 .container {
-  width: 1248px;
+  width: 1280px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
 }
 
 .section {
-  margin: 0 auto;
-  padding-right: 16px;
-  padding-left: 16px;
   width: 1280px;
-  outline: 1px solid red;
+  margin: 0 auto;
+  /* outline: 1px solid red; */
 }
 
 .section-title {
@@ -70,12 +71,18 @@ a {
   margin-bottom: 20px;
 }
 
+.section-subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
 .paragraph {
   margin-bottom: 40px;
+  line-height: 1.2;
 }
 
 /* button */
-
 .btn {
   font-family: var(--main-font-style);
   background-color: var(--main-accent-color);
@@ -103,14 +110,18 @@ a {
 }
 
 /* клас для білої кнопки з зеленою рамкою */
-.light-theme-btn {
-  background: var(--main-bg-color);
-  border: 0.854167px solid;
-  border-color: var(--main-accent-color);
+.light-theme-btn.btn {
+  background-color: var(--clean-white-color);
+  border: 2px solid var(--main-text-accent-color);
+}
+
+.light-theme-btn.btn:hover,
+.light-theme-btn.btn:focus {
+  border-color: var(--main-btn-hover-color);
 }
 
 /* клас для високої кнопки форми */
-.form-btn {
+.form-btn.btn {
   width: 103px;
   height: 42px;
   border-radius: 30px;
@@ -120,6 +131,7 @@ a {
 /** ============================== /COMPONENTS ============================== **/
 
 body {
+  /* margin-top: 72px; for header position: sticky*/
   font-family: var(--main-font-style);
   color: var(--primary-text-color);
   font-size: 16px;
@@ -127,24 +139,29 @@ body {
   background-color: var(--main-bg-color);
 }
 
-/* Приклад оформлення секції. Компонентні класи (ті що використовуюуться багато разів, пишемо в розділі COMPONENTS
-.hero-section {}
-.hero-container {}
-.hero-title {}
-.hero-block {}
-всі ваші інші класи
- */
-
 /** ============================== HEADER ============================== **/
 
 /* header */
+.header-section {
+  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+  background: var(--main-bg-color);
+  margin-left: auto;
+  margin-right: auto;
+  /* for header position: sticky
+  position: fixed;
+  z-index: 100;
+   top: 0;
+  left: 50%;
+  transform: translate(-50%, calc(-50% + 36px)); */
+}
 
-.header.main {
+
+.header.main-nav {
   display: flex;
   align-items: center;
   text-decoration: none;
-  background: var(--main-bg-color);
-  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+
+
 }
 
 /* logo */
@@ -210,11 +227,11 @@ body {
   width: 0;
   height: 1.5px;
   background-color: var(--main-accent-color);
+  transition: width 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-item:hover:before {
   width: 100%;
-  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-item::before {
@@ -228,31 +245,96 @@ body {
 }
 
 .btn.head {
-  margin-left: auto;
+  margin-left: 30px;
 }
 
 /** ============================== /HEADER ============================== **/
 
 /** ============================== HERO ============================== **/
+.hero-container {
+  display: flex;
+}
+
+.hero-list {
+  padding-top: 159px;
+}
+
+.hero-title {
+  font-size: 48px;
+  margin-bottom: 28px;
+}
+
+.hero-paragraph {
+  margin-bottom: 40px;
+}
+
+.hero-list>.btn.head {
+  margin-left: 0;
+}
+
+.hero-image {
+  display: block;
+  width: 580px;
+  height: 580px;
+  margin-left: 138px;
+  border: 26px solid #FFE550;
+  border-radius: 50%;
+  margin-top: 14px;
+  margin-right: 0;
+  margin-left: auto;
+}
 
 /** ============================== /HERO ============================== **/
 
 /** ============================== OFFERINGS ============================== **/
 
+.offerings-section {
+  position: relative;
+}
+
+.offerings-section .bg-img-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../images/bg-yellow-bottom.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* outline: 1px solid violet; */
+  height: 824px;
+  width: 1280px;
+  z-index: -1;
+  transform: translatey(-147px);
+}
+
 .container-flex {
   display: flex;
+  align-items: flex-end;
+  padding-bottom: 43px;
+  padding-top: 30px;
+
 }
 
 .offerings-list {
   display: flex;
+  margin-right: -67px;
 }
 
 .offerings-list .list-item {
-  outline: 1px solid red;
+  --items: 2;
+  --indent: 67px;
+  flex-basis: calc((100% - (var(--items) -1) * var(--indent)) / var(--items));
+  margin-right: 67px;
 }
 
-.oferings-icon {
-  outline: 1px solid red;
+.offerings-list .link-item:last-child {
+  margin-right: 0;
+}
+
+.offer-list-paragraph {
+  font-size: 14px;
+}
+
+.offerings-icon {
   background-color: var(--main-bg-color);
   border-radius: 50%;
   width: 48px;
@@ -260,18 +342,31 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 8px;
 }
 
 .offerings-content {
+  margin-left: 90px;
   width: 573px;
-  outline: 1px solid green;
+  padding-bottom: 43px;
+
+}
+
+.light-theme-btn.btn.btn-offering {
+  width: 106px;
+  height: 40px;
+  /* margin-bottom: 57px; */
+}
+
+.light-theme-btn.btn.btn-offerings:hover,
+.light-theme-btn.btn.btn-offerings:focus {
+  background-color: var(--main-accent-color);
+  border-color: var(--main-accent-color);
 }
 
 /** ============================== /OFFERINGS ============================== **/
 
 /** ============================== FAVORITES ============================== **/
-
-/** ============================== /FAVORITES ============================== **/
 
 .container-favorites {
   padding-top: 100px;
@@ -282,20 +377,18 @@ body {
   text-align: center;
 }
 
-.favorite-txt {
-  line-height: 1.2;
-  margin-bottom: 40px;
+.favorites-paragraph {
   text-align: center;
 }
 
-.favorite-list {
-  --indent-favorites: 32px;
+.favorites-list {
+  --indent: 32px;
   display: flex;
   flex-wrap: wrap;
-  gap: calc(var(--indent-favorites) * 2) var(--indent-favorites);
+  gap: calc(var(--indent) * 2) var(--indent);
 }
 
-.favorite-item {
+.favorites-item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -307,24 +400,42 @@ body {
   stroke: var(--main-clearance-color);
 }
 
-.favorite-ring {
+.favorites-ring {
   position: absolute;
   z-index: -1;
 }
 
-.favorite-item:hover,
-.favorite-item:focus {
+.favorites-item:hover,
+.favorites-item:focus {
   stroke: var(--main-accent-color);
 }
+
+/** ============================== /FAVORITES ============================== **/
+
 
 /** ============================== CUSTOMERS SAY ============================== **/
 
 /* ще не зроблене позиціювання фонового зображення */
 .customers-section {
-  height: 647px;
-  background-image: url(../images/bg-yellow-top.png);
+  position: relative;
+  padding-bottom: 134px;
   padding-top: 100px;
-  padding-bottom: 200px;
+}
+
+.bg-img-top {
+  background-image: url("../images/bg-yellow-top.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 647px;
+  width: 1480px;
+  z-index: -1;
+}
+
+.customers-container {
+  /* padding-bottom: 134px; */
 }
 
 .customers-title {
@@ -356,7 +467,6 @@ body {
   padding-right: 14px;
 }
 
-/** ============================== /CUSTOMERS ============================== **/
 .customer-icon {
   margin-left: 14px;
   margin-top: 14px;
@@ -395,7 +505,24 @@ body {
   background-color: var(--main-text-accent-color);
 }
 
+.customer-name {
+  font-weight: var(--main-medium-font);
+  font-size: 14px;
+  margin-bottom: 4px;
+  margin-right: 16px;
+}
+
+.customer-descr {
+  font-size: 14px;
+  margin-right: 2px;
+}
+
+/** ============================== /CUSTOMERS ============================== **/
+
+
+/** ============================== SUBSCRIBE ============================== **/
 .sub-title {
+  padding-top: 46px;
   font-family: var(--main-font-style);
   font-weight: var(--main-bold-font);
   font-size: 42px;
@@ -413,49 +540,53 @@ body {
   margin-bottom: 24px;
 }
 
-.customer-name {
-  font-weight: var(--main-medium-font);
-  font-size: 14px;
-  margin-bottom: 4px;
-  margin-right: 16px;
-}
-
-.customer-descr {
-  font-size: 14px;
-  margin-right: 2px;
-}
-
-/** ============================== SUBSCRIBE ============================== **/
-
-.subscribe {
+.subscribe-section {
   padding-bottom: 100px;
+  min-width: 266px;
+
 }
 
 .sub-container {
+
   display: flex;
 }
 
-
-
-/** ============================== /SUBSRIBE ============================== **/
+/** ============================== /SUBSCRIBE ============================== **/
 
 /** ============================== FOOTER ============================== **/
-.footer-section{
+.footer-section {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.footer{
+
+.nav-footer .list {
+  padding-top: 19px;
+  /* display: flex; */
+}
+
+.footer-section .nav {
   display: flex;
+  align-items: flex-start;
 }
-.list-item{
-  margin-left: 28px;
+
+.footer-section .list-item:not(:last-child) {
+  margin-right: 28px;
+  margin-left: 0;
 }
-.footer-logo{
+
+.footer-section .list-item:last-child {
+  margin-left: 0;
+}
+
+.footer-logo {
   margin-right: 148px;
 }
+
 /* subscribe form */
 .form {
-  padding-left: 320px;
+  margin-left: 320px;
+  width: 395px;
+  outline: 1px solid red;
 }
 
 .form-title {
@@ -468,9 +599,7 @@ body {
 }
 
 .form-paragraph {
-  font-weight: 400;
   font-size: 12px;
-  line-height: 1.2;
   color: var(--primary-text-color);
   margin-top: 12px;
 }
@@ -482,39 +611,42 @@ body {
 
 
 /*Nadiia Bykova*/
- .group-footer{
-  background-image: url(../images/footer-bg.png);
+.footer-section {
+  background-image: url("../images/footer-bg.png");
+  background-size: contain;
   background-repeat: no-repeat;
- }
+  background-position: bottom;
+  border-top: var(--main-bg-color);
+  box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+  margin-bottom: 50px;
+}
 
- .footer-link {
-   color: var(--main-text-accent-color);
-   font-weight: 400;
-   font-size: 12px;
-   line-height: 1.2px;
-   text-decoration: underline;
- }
+.footer-link {
+  color: var(--main-text-accent-color);
+  font-size: 12px;
+  text-decoration: underline;
+}
 
- .list-footer {
-   display: flex;
-   gap: 20px;
- }
+.list-footer {
+  display: flex;
+  gap: 20px;
+}
 
- .last-line {
-   display: flex;
-   justify-content: space-between;
-   padding-bottom: 100px;
-   align-items: baseline;
-  
- }
+.last-line {
+  display: flex;
+  justify-content: space-between;
 
- .text-footer {
-   font-weight: 400;
-   font-size: 12px;
-   line-height: 1.2px;
- }
+  align-items: baseline;
 
- 
- 
+}
+
+.text-footer {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2px;
+}
+
+
+
 
 /** ============================== /FOOTER ============================== **/

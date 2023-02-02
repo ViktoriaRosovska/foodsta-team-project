@@ -256,19 +256,22 @@ body {
 
   padding: 0;
 }
+
 .hero-list {
   padding-top: 159px;
 }
+
 .hero-title {
   font-size: 48px;
   line-height: 1.2;
   margin-bottom: 28px;
 }
+
 .hero-paragraph {
   margin-bottom: 40px;
 }
-.hero-list > .btn.head
-{
+
+.hero-list>.btn.head {
   margin-left: 0;
 }
 
@@ -415,7 +418,6 @@ body {
 
 /** ============================== CUSTOMERS SAY ============================== **/
 
-/* ще не зроблене позиціювання фонового зображення */
 .customers-section {
   position: relative;
   padding-bottom: 134px;
@@ -653,6 +655,6 @@ body {
 
 }
 
- 
+
 
 /** ============================== /FOOTER ============================== **/

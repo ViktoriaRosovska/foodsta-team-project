@@ -40,7 +40,7 @@
           </ul>
         </nav>
 
-         <button type="button" class="btn head">Order Now</button>
+         <button type="button" data-modal-open class="btn head">Order Now</button>
   </div>
 </header>    
    
@@ -62,7 +62,7 @@
               ornare, eros dolor interdum nulla, ut commodo diam libero vitae
               erat.
             </p>
-            <button type="button" class="btn head">Order now</button>
+            <button type="button" data-modal-open class="btn head">Order now</button>
           </div>
 
           <div class="hero-image">
@@ -115,7 +115,7 @@
            
           </li>
         </ul>
-       <button class="light-theme-btn btn btn-offerings" type="button">Order Now</button> 
+       <button class="light-theme-btn btn btn-offerings" data-modal-open type="button">Order Now</button> 
        <div class="bg-img-bottom"></div>
       </div>
       
@@ -308,6 +308,22 @@
   </div>
   </div>
 </footer>
+
+<!-- modal form  Pasha Samusev -->
+
+ <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p></p>
+        <button type="button" data-modal-close class="modal-button">
+          <svg class="icon-modal-button">
+            <use href="././images/svg/icons.svg#icon-close"></use>
+          </svg> 
+          </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+
 </body>
 
 </html>

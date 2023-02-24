@@ -17,7 +17,7 @@
   --items: 2;
   --indent: 67px;
 
-  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   /*змінні для формули, змінні можна перебивати задаючи в своїй секції нові значення
      flex-basis: calc((100% - (var(--items) -1) * var(--indent)) / var(--items)); */
@@ -157,13 +157,10 @@ body {
   transform: translate(-50%, calc(-50% + 36px)); */
 }
 
-
 .header.main-nav {
   display: flex;
   align-items: center;
   text-decoration: none;
-
-
 }
 
 /* logo */
@@ -694,7 +691,6 @@ body {
    visibility: hidden;
    pointer-events: none;
  }
- 
  
  .modal-button {
    position: absolute;

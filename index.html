@@ -7,10 +7,7 @@
     <title>FoodSta</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -18,6 +15,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./css/slider.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -40,14 +42,14 @@
           </ul>
         </nav>
 
-         <button type="button" data-modal-open class="btn head">Order Now</button>
-  </div>
-</header>    
-   
-<main>
-<!-- Hero  Dmytro Kozhukhar-->
-  
-  <section class="hero-section section">
+        <button type="button" data-modal-open class="btn head">Order Now</button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero  Dmytro Kozhukhar-->
+
+      <section class="hero-section section">
         <div class="container hero-container">
           <div class="hero-list">
             <h1 class="hero-title section-title">
@@ -55,276 +57,269 @@
               Food From Anywhere
             </h1>
             <p class="hero-paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse <br />
-              varius enim in eros elementum tristique. Duis cursus, mi quis
-              viverra <br />
-              ornare, eros dolor interdum nulla, ut commodo diam libero vitae
-              erat.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse <br />
+              varius enim in eros elementum tristique. Duis cursus, mi quis viverra <br />
+              ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
             </p>
             <button type="button" data-modal-open class="btn head">Order now</button>
           </div>
 
           <div class="hero-image">
-            <img
-              src="./images/falafel.png"
-              alt="nicefood"
-              width="528"
-              height="528"
-            />
+            <div class="slider-img fade">
+              <div>
+                <img src="./images/falafel.png" alt="nicefood" width="528" height="528" />
+              </div>
+              <div>
+                <img src="./images/pngwing.png" alt="nicefood" width="528" height="528" />
+              </div>
+              <div>
+                <img src="./images/chris-ralston.png" alt="nicefood" width="528" height="528" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-     
-<!-- Offerings Pasha Bitelov--Dmytro Krylov-->
-<section class="offerings-section section">
-  <div class="container container-flex">
-      <img src="./images/apple.png" alt="apple" width="550" height="604">
-      <div class="offerings-content">
-        <h2 class="section-title">Whats Special About Our Offerings</h2>
-        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-           Suspendisse varius enim in eros elementum tristique. 
-           Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-          </p>
-        <ul class="offerings-list">
-          <li class="list-item">
-            
-           <div class="thumb">
-            <div class="offerings-icon">
-              <svg class="" width="32" height="32">
-              <use href="./images/svg/icons.svg#icon-rocket"></use>
+      <!-- Offerings Pasha Bitelov--Dmytro Krylov-->
+      <section class="offerings-section section">
+        <div class="container container-flex">
+          <img src="./images/apple.png" alt="apple" width="550" height="604" />
+          <div class="offerings-content">
+            <h2 class="section-title">Whats Special About Our Offerings</h2>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+              tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae
+              erat.
+            </p>
+            <ul class="offerings-list">
+              <li class="list-item">
+                <div class="thumb">
+                  <div class="offerings-icon">
+                    <svg class="" width="32" height="32">
+                      <use href="./images/svg/icons.svg#icon-rocket"></use>
+                    </svg>
+                  </div>
+                  <h3 class="section-subtitle">Fasest Delivery</h3>
+                  <p class="paragraph offer-list-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                  </p>
+                </div>
+              </li>
+              <li class="list-item">
+                <div class="thumb">
+                  <div class="offerings-icon">
+                    <svg class="" width="32" height="32">
+                      <use href="./images/svg/icons.svg#icon-touch"></use>
+                    </svg>
+                  </div>
+                  <h3 class="section-subtitle">Easy To Order</h3>
+                  <p class="paragraph offer-list-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <button class="light-theme-btn btn btn-offerings" data-modal-open type="button">Order Now</button>
+            <div class="bg-img-bottom"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Favorites Mykola Kolyada--add issue-->
+
+      <section class="favorites-section section">
+        <div class="container container-favorites">
+          <h2 class="section-title favorites-title">Some of Our Favorites</h2>
+          <p class="favorites-paragraph paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <ul class="favorites-list">
+            <li class="favorites-item">
+              <svg class="favorites-ring" width="394" height="397">
+                <use href="./images/svg/icons.svg#ring"></use>
               </svg>
-            </div>
-             <h3 class="section-subtitle">Fasest Delivery</h3>
-           <p class="paragraph offer-list-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-           </div>
-          
-          </li>
-          <li class="list-item">
-            
-          <div class="thumb">
-            <div class="offerings-icon">
-               <svg class="" width="32" height="32">
-            <use href="./images/svg/icons.svg#icon-touch"></use>
-           </svg>
-            </div>
-          <h3 class="section-subtitle">Easy To Order</h3>
-          <p class="paragraph offer-list-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+              <img src="./images/gamburger.png" alt="gamburger" width="315" height="315" />
+            </li>
+            <li class="favorites-item">
+              <svg class="favorites-ring" width="394" height="397">
+                <use href="./images/svg/icons.svg#ring"></use>
+              </svg>
+              <img src="./images/pasta.png" alt="Pasta" width="315" height="315" />
+            </li>
+            <li class="favorites-item">
+              <svg class="favorites-ring" width="394" height="397">
+                <use href="./images/svg/icons.svg#ring"></use>
+              </svg>
+              <img src="./images/pizza.png" alt="pizza" width="315" height="315" />
+            </li>
+            <li class="favorites-item">
+              <svg class="favorites-ring" width="394" height="397">
+                <use href="./images/svg/icons.svg#ring"></use>
+              </svg>
+              <img src="./images/chicken.png" alt="chicken" width="315" height="315" />
+            </li>
+            <li class="favorites-item">
+              <svg class="favorites-ring" width="394" height="397">
+                <use href="./images/svg/icons.svg#ring"></use>
+              </svg>
+              <img src="./images/salat.png" alt="salat" width="315" height="315" />
+            </li>
+            <li class="favorites-item">
+              <svg class="favorites-ring" width="394" height="397">
+                <use href="./images/svg/icons.svg#ring"></use>
+              </svg>
+              <img src="./images/borshch.png" alt="borshch" width="315" height="315" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Customers Say Vitalina Shpir--add issue-->
+
+      <section class="customers-section section">
+        <div class="container customers-container">
+          <h2 class="section-title customers-title">What our Customers Say</h2>
+          <p class="paragraph customers-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <ul class="say-list list">
+            <li class="customers-card">
+              <div class="card-place">
+                <svg class="customer-icon" width="101px" height="16px">
+                  <use href="./images/svg/icons.svg#icon-stars"></use>
+                </svg>
+                <p class="customer-text">
+                  “The Best app I have used to order food in a while, so many options to choose from too, I would
+                  recommend to a freind, No questions asked”
+                </p>
+                <div class="customer-info">
+                  <img src="./images/custom-m.png" alt="custom" width="48px" height="48px" />
+                  <div>
+                    <h3 class="customer-name">Sumith Shah</h3>
+                    <p class="customer-descr">Some Dude</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="customers-card">
+              <div class="card-place">
+                <svg class="customer-icon" width="101px" height="16px">
+                  <use href="./images/svg/icons.svg#icon-stars"></use>
+                </svg>
+                <p class="customer-text">
+                  “The ease with which I can just go in and order what i want was amazing, It has been a very pleasant
+                  experience ordering from this app”
+                </p>
+                <div class="customer-info">
+                  <img src="./images/custom-w.png" alt="custom" width="48px" height="48px" />
+                  <div>
+                    <h3 class="customer-name">Sumith Shah</h3>
+                    <p class="customer-descr">Some Dude</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="bg-img-top"></div>
+        </div>
+      </section>
+
+      <!-- Subscribe Illya--Albina -->
+      <section class="subscribe-section section">
+        <div class="container sub-container">
+          <div>
+            <h2 class="section-title sub-title">Subscribe To Get Special Offers</h2>
+            <p class="paragraph sub-paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+              tristique.
+            </p>
+            <!-- the form -->
+            <button type="button" class="btn sub">Subscribe</button>
           </div>
-           
-          </li>
-        </ul>
-       <button class="light-theme-btn btn btn-offerings" data-modal-open type="button">Order Now</button> 
-       <div class="bg-img-bottom"></div>
-      </div>
-      
-  </div>
- 
-</section>
-
-
-<!-- Favorites Mykola Kolyada--add issue-->
-
-<section class="favorites-section section">
-  <div class="container container-favorites">
-
-    <h2 class="section-title favorites-title">Some of Our Favorites</h2>
-    <p class="favorites-paragraph paragraph">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    </p>
-    <ul class="favorites-list">
-      <li class="favorites-item">
-        <svg class="favorites-ring" width="394" height="397">
-          <use href="./images/svg/icons.svg#ring"></use>
-        </svg>
-        <img
-          src="./images/gamburger.png"
-          alt="gamburger"
-          width="315"
-          height="315"
-        />
-      </li>
-      <li class="favorites-item">
-        <svg class="favorites-ring" width="394" height="397">
-          <use href="./images/svg/icons.svg#ring"></use>
-        </svg>
-        <img
-          src="./images/pasta.png"
-          alt="Pasta"
-          width="315"
-          height="315"
-        />
-      </li>
-      <li class="favorites-item">
-        <svg class="favorites-ring" width="394" height="397">
-          <use href="./images/svg/icons.svg#ring"></use>
-        </svg>
-        <img
-          src="./images/pizza.png"
-          alt="pizza"
-          width="315"
-          height="315"
-        />
-      </li>
-      <li class="favorites-item">
-        <svg class="favorites-ring" width="394" height="397">
-          <use href="./images/svg/icons.svg#ring"></use>
-        </svg>
-        <img
-          src="./images/chicken.png"
-          alt="chicken"
-          width="315"
-          height="315"
-        />
-      </li>
-      <li class="favorites-item">
-        <svg class="favorites-ring" width="394" height="397">
-          <use href="./images/svg/icons.svg#ring"></use>
-        </svg>
-        <img
-          src="./images/salat.png"
-          alt="salat"
-          width="315"
-          height="315"
-        />
-      </li>
-      <li class="favorites-item">
-        <svg class="favorites-ring" width="394" height="397">
-          <use href="./images/svg/icons.svg#ring"></use>
-        </svg>
-        <img
-          src="./images/borshch.png"
-          alt="borshch"
-          width="315"
-          height="315"
-        />
-      </li>
-    </ul>
-  </div>
-</section>
-
-<!-- Customers Say Vitalina Shpir--add issue-->
-
-<section class="customers-section section">
-  <div class="container customers-container">
-  <h2 class="section-title customers-title">What our Customers Say</h2>
-  <p class="paragraph customers-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <ul class="say-list list">
-      <li class="customers-card">
-        <div class="card-place">
-          <svg class="customer-icon" width="101px" height="16px">
-            <use href="./images/svg/icons.svg#icon-stars"></use>
-          </svg>
-          <p class="customer-text">“The Best app I have used to order food in a while, so many options to choose from too, I would recommend to a freind, No questions asked”</p>
-          <div class="customer-info">
-            <img src="./images/custom-m.png" alt="custom" width="48px" height="48px">
-            <div>
-              <h3 class="customer-name">Sumith Shah</h3>
-              <p class="customer-descr">Some Dude</p>
+          <img class="sub-img" src="./images/banan.png" alt="banana" width="608" height="266" />
+        </div>
+      </section>
+    </main>
+    <!-- Footer Nadia Bykova--add issue Svitlana Byivol add issue-->
+    <footer class="footer-section section">
+      <div class="container footer-container">
+        <div class="footer-head">
+          <nav class="nav nav-footer">
+            <a href="./index.html" class="footer-logo">
+              <svg width="66" height="52">
+                <use href="./images/svg/icons.svg#icon-logo"></use>
+              </svg>
+            </a>
+            <ul class="list">
+              <li class="list-item"><a href="" class="link-item">Home</a></li>
+              <li class="list-item"><a href="" class="link-item">About</a></li>
+              <li class="list-item"><a href="" class="link-item">Service</a></li>
+              <li class="list-item"><a href="" class="link-item">Menu</a></li>
+              <li class="list-item"><a href="" class="link-item">Contact</a></li>
+            </ul>
+            <div class="form">
+              <h3 class="form-title">Subscribe</h3>
+              <div></div>
+              <button type="button" class="btn light-theme-btn form-btn">Subscribe</button>
+              <p class="form-paragraph">
+                By subscribing you agree to with our <a href="" class="form-link">Privacy Policy</a>
+              </p>
             </div>
+          </nav>
+        </div>
+
+        <div class="last-line">
+          <div>
+            <ul class="list-footer list">
+              <li class="link-item">
+                <a class="footer-link" href="">Privacy Policy</a>
+              </li>
+              <li class="link-item">
+                <a class="footer-link" href="">Terms of Service</a>
+              </li>
+              <li class="link-item">
+                <a class="footer-link" href="">Cookies Settings</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-footer">2022 FoodSta. All right reserved.</p>
           </div>
         </div>
-      </li>
-      <li class="customers-card">
-        <div class="card-place">
-          <svg class="customer-icon" width="101px" height="16px">
-            <use href="./images/svg/icons.svg#icon-stars"></use>
-          </svg>
-          <p class="customer-text">“The ease with which I can just go in and order what i want was amazing, It has been a very pleasant experience ordering from this app”</p>
-          <div class="customer-info">
-            <img src="./images/custom-w.png" alt="custom" width="48px" height="48px">
-            <div>
-              <h3 class="customer-name">Sumith Shah</h3>
-              <p class="customer-descr">Some Dude</p>
-            </div>
-          </div>
-        </div>
-      </li>
-    </ul>
-    <div class="bg-img-top"></div>
- </div>
-</section>
-
-<!-- Subscribe Illya--Albina -->
-<section class="subscribe-section section">
-  <div class="container sub-container">
-    <div>
-    <h2 class="section-title sub-title">Subscribe To Get Special Offers</h2> 
-      <p class="paragraph sub-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-    <!-- the form -->
-      <button type="button" class="btn sub">Subscribe</button>
-    </div>
-      <img class="sub-img" src="./images/banan.png" alt="banana" width="608" height="266">
-  </div>
-</section>
-</main>
-<!-- Footer Nadia Bykova--add issue Svitlana Byivol add issue-->
-<footer class="footer-section section">
-
-  <div class="container footer-container">
-    <div class="footer-head">
-      
-    <nav class="nav nav-footer"> 
-      <a href="./index.html" class="footer-logo"> <svg width="66" height="52">
-      <use href="./images/svg/icons.svg#icon-logo"></use>
-    </svg> 
-    </a>
-      <ul class="list">
-         <li class="list-item"><a href="" class="link-item" >Home</a></li>
-         <li class="list-item"><a href="" class="link-item" >About</a></li>
-         <li class="list-item"><a href="" class="link-item" >Service</a></li>
-         <li class="list-item"><a href="" class="link-item" >Menu</a></li>
-         <li class="list-item"><a href="" class="link-item" >Contact</a></li>
-     </ul>
-      <div class="form">
-      <h3 class="form-title">Subscribe</h3>
-      <div>
       </div>
-      <button type="button" class="btn light-theme-btn form-btn">Subscribe</button>
-      <p class="form-paragraph">By subscribing you agree to with our <a href="" class="form-link">Privacy Policy</a></p>
-    </div>
-    </nav>
-    </div>
-   
-  <div class="last-line">
-    <div>
-      <ul class="list-footer list">
-        <li class="link-item">
-          <a class="footer-link" href="">Privacy Policy</a>
-        </li>
-        <li class="link-item">
-          <a class="footer-link" href="">Terms of Service</a>
-        </li>
-        <li class="link-item">
-          <a class="footer-link" href="">Cookies Settings</a>
-        </li>
-      </ul>
-    </div>
-    <div >
-      <p class="text-footer">2022 FoodSta. All right reserved.</p>
+    </footer>
 
-    </div>
-  </div>
-  </div>
-</footer>
+    <!-- modal form  Pasha Samusev -->
 
-<!-- modal form  Pasha Samusev -->
-
- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <p></p>
         <button type="button" data-modal-close class="modal-button">
           <svg class="icon-modal-button">
             <use href="././images/svg/icons.svg#icon-close"></use>
-          </svg> 
-          </button>
+          </svg>
+        </button>
       </div>
     </div>
+    <!-- <div class="slider-img fade">
+      <div>
+        <img src="./images/falafel.png" alt="nicefood" width="528" height="528" />
+      </div>
+      <div>
+        <img src="./images/pngwing.png" alt="nicefood" width="528" height="528" />
+      </div>
+      <div>
+        <img src="./images/chris-ralston.png" alt="nicefood" width="528" height="528" />
+      </div>
+    </div> -->
 
     <script src="./js/modal.js"></script>
-
-</body>
-
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.slider-img').slick({
+          setting-name: setting-value
+        });
+      });
+    </script>
+    <script src="./js/slider.js"></script>
+  </body>
 </html>
-

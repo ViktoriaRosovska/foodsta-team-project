@@ -278,6 +278,7 @@ body {
 }
 
 .hero-image {
+  position: relative;
   display: block;
   width: 580px;
   height: 580px;
